@@ -1,14 +1,16 @@
-function check() {
-    var tekst = "";
-    for (i = 0; i <= 1000; i++) {
-        if (i == 666) {
-            tekst += i + " kiekeboe<br>";
-        } else {
-            tekst += i + "<br>"
+//javascript code
+var tekst;
+    for (var i = 0; i <= 1000; i += 10) {
+        console.log(i)
+
+        tekst += i + "<br>";
+
+        if (i == 19) {
+            tekst += "";
         }
-
-        console.log(i);
+        else if(i==40){
+            tekst += "";
+        }
     }
-    document.getElementById("tekst").innerHTML = tekst;
 
-}
+    document.getElementById("uitkomst").innerHTML = tekst;
